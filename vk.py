@@ -14,7 +14,7 @@ class Vkontakte:
         url = 'https://api.vk.com/method/photos.get'
         params = {
             'album_id': 'profile',
-            'extended': '1',
+            'extended': '1'
         }
         response = requests.get(url, params={**self.auth_params, **params}).json()
         dict_photos = {}
